@@ -1,5 +1,21 @@
 nav {
-  background-color: rgb(55, 55, 61);
+  z-index: 1;
+}
+
+#navbarMenuToggler {
+  z-index: 1;
+}
+
+
+@media (max-width: 767px) {
+  #navbarMenu {
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 30px;
+  }
 }
 
 .container-fluid {
@@ -10,6 +26,45 @@ nav {
   font-size: 25px;
 }
 
+#arrow {
+  transform: rotate(90deg);
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+#navbarMenu .nav-link {
+  padding: 12px 5px;
+}
+
 .nav-title, .nav-link, .nav-title:hover, .nav-link:hover {
   color: white;
+}
+
+#hero-img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-image: url(./images/national-cancer-institute-KMvoHcB-w5g-unsplash\ \(1\).jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-content {
+  height: 400px;
+  text-shadow: black 0px 2px 1px;
+}
+
+@media (min-width: 992px) {
+  .hero-content {
+    height: 550px;
+  }
+}
+
+.window {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 10px 10px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  border-left: 2px solid rgba(255, 255, 255, 0.5);
 }

@@ -16,28 +16,43 @@
   
 </head>
 <body>
-  <nav class="navbar navbar-expand-md px-2">
+  <nav class="navbar navbar-expand-md px-2 position-absolute w-100">
     <div class="container-fluid">
       <a class="nav-title d-none navbar-brand d-md-flex btn btn-outline-secondary rounded-pill py-0 px-2 border-0" href="#">Mario Perez</a>
-      <button class="nav-title navbar-toggler btn btn-outline-secondary rounded-pill py-0 px-2 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        Mario Perez
+      <button class="nav-title navbar-toggler btn btn-outline-secondary rounded-pill py-0 px-2 border-0 position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="navbarMenuToggler">
+        Mario Perez <div id="arrow"><small> > </small></div>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mt-2 mb-md-0 mt-md-0">
-          <li class="nav-item btn btn-outline-secondary rounded-pill py-md-0 px-md-1 border-0">
+        <ul class="navbar-nav me-auto me-md-0 ms-md-auto mb-2 mt-2 mb-md-0 mt-md-0" id="navbarMenu">
+          <li class="nav-item btn btn-outline-secondary rounded-pill py-0 px-2 border-0">
             <a class="nav-link" aria-current="page" href="#">About</a>
           </li>
-          <li class="nav-item btn btn-outline-secondary rounded-pill py-0 px-1 border-0">
+          <li class="nav-item btn btn-outline-secondary rounded-pill py-0 px-2 border-0">
             <a class="nav-link" aria-current="page" href="#">Past Projects</a>
           </li>
-          <li class="nav-item btn btn-outline-secondary rounded-pill py-0 px-1 border-0">
+          <li class="nav-item btn btn-outline-secondary rounded-pill py-0 px-2 border-0">
             <a class="nav-link" aria-current="page" href="#">Social</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+
+  <!--Hero-->
+  <div id="hero-img">
+    <div id="container-fluid">
+      <div id="row">
+        <div class="col-12 hero-content text-white d-flex align-items-center justify-content-center">
+          <div class="text-center window">
+            <h1 class="text-uppercase">Mario Perez</h1>
+            <div class="hero-divider border-bottom"></div>
+            <h3>Personal Portfolio</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   
