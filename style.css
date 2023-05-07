@@ -1,0 +1,15 @@
+nav {
+  background-color: rgb(55, 55, 61);
+}
+
+.container-fluid {
+  max-width: 1200px;
+}
+
+.nav-title {
+  font-size: 25px;
+}
+
+.nav-title, .nav-link, .nav-title:hover, .nav-link:hover {
+  color: white;
+}
