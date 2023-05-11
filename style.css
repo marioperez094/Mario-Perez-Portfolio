@@ -1,3 +1,7 @@
+body {
+  color: rgba(44, 44, 44, 0.8)
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -125,7 +129,7 @@ nav {
   font-weight: 700;
 }
 
-.skills i {
+.skills i, #social i, #social h5 {
   font-size: 40px;
   padding: 0 10px;
 }
