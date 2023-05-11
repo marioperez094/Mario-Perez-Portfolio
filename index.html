@@ -16,7 +16,7 @@
   
 </head>
 <body>
-  <nav class="navbar navbar-expand-md px-2 position-absolute w-100">
+  <nav class="navbar navbar-expand-md px-2 position-absolute w-100 header">
     <div class="container-fluid">
       <a class="nav-title d-none navbar-brand d-md-flex btn btn-outline-secondary rounded-pill py-0 px-2 border-0" href="#">Mario Perez</a>
       <button class="nav-title navbar-toggler btn btn-outline-secondary rounded-pill py-0 px-2 border-0 position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -26,10 +26,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto me-md-0 ms-md-auto mb-2 mt-2 mb-md-0 mt-md-0" id="navbarMenu">
           <li class="nav-item btn btn-outline-secondary rounded-pill py-0 px-2 border-0">
-            <a class="nav-link" aria-current="page" href="#">About</a>
+            <a class="nav-link" aria-current="page" href="#about">About</a>
           </li>
           <li class="nav-item btn btn-outline-secondary rounded-pill py-0 px-2 border-0">
-            <a class="nav-link" aria-current="page" href="#">Past Projects</a>
+            <a class="nav-link" aria-current="page" href="#projects">Projects</a>
           </li>
           <li class="nav-item btn btn-outline-secondary rounded-pill py-0 px-2 border-0">
             <a class="nav-link" aria-current="page" href="#">Social</a>
@@ -40,21 +40,115 @@
   </nav>
 
   <!--Hero-->
-  <div id="hero-img">
-    <div id="container-fluid">
-      <div id="row">
+  <div id="hero-img" class="position-relative">
+    <div class="container-fluid">
+      <div class="row">
         <div class="col-12 hero-content text-white d-flex align-items-center justify-content-center">
-          <div class="text-center window">
-            <h1 class="text-uppercase">Mario Perez</h1>
-            <div class="hero-divider border-bottom"></div>
-            <h3>Personal Portfolio</h3>
+          <div class="text-center window d-flex align-items-center justify-content-center">
+            <span>
+              <h1 class="text-uppercase">Mario Perez</h1>
+              <div class="hero-divider"></div>
+              <h3>Personal Portfolio</h3>
+            </span>
           </div>
         </div>
       </div>
     </div>
   </div>
 
+  <!--About-->
+  <div class="header text-white text-center py-3" id="about">
+    <h2>About</h2>
+  </div>
 
+  <div class="container-fluid py-5">
+    <div class="row about">
+      <div class="col-12 col-md-6 order-md-2 img-border">
+        <div class="img-fluid aspectRatio rounded-circle" style="background-image: url(./images/joshua-coleman-wWT-ING8a0A-unsplash.jpg);">
+        </div>
+      </div>
+      <div class="col-12 col-md-6 order-md-1 d-flex align-items-center about-text pt-5">
+        <span>
+          <h2 class="text-center">A healthcare worker for 11 years!</h2>
+          <h5 class="text-justify pt-3">I am a nurse in the critical care, having experience in different hospital roles. Technology is becoming a larger part of healthcare, and to play a part in it. Currently I am attending <b>Altcademy's Full-stack bootcamp</b> which I hope to apply in my nursing career.</h5>
+          <div class="skills text-center py-3">
+            <h4>Skills</h4>
+            <i class="fa-brands fa-html5" style="color: #000000;"></i>
+            <i class="fa-brands fa-css3-alt" style="color: #000000;"></i>
+            <i class="fa-brands fa-bootstrap" style="color: #000000;"></i>
+          </div>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!--Projects-->
+  <div class="project-bg" id="projects">
+    <div class="container-fluid">
+      <h2 class="text-center text-white py-5">Projects</h2>
+      <div class="row text-white">
+        <div class="col-12 col-md-6 apple-bg mb-5">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <a class="project-size" href="https://silly-figolla-24c2ee.netlify.app/">
+                <div class="img-fluid projectRatio project-img-l"
+                  style="background-image: url(./images/apple-clone.PNG);">
+                </div>
+              </a>
+            </div>
+            <div class="col-12 col-md-6 apple-text">
+              <h3 class="text-center">Apple Clone</h3>
+              <h4>First Altcademy website, cloning the Apple homepage with html and css.</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 newsweek-bg mb-5">
+          <div class="row">
+            <div class="col-12 col-md-6 order-md-2">
+              <a class="project-size" href="https://heroic-yeot-a2f5d8.netlify.app/">
+                <div class="img-fluid projectRatio project-img-r" style="background-image: url(./images/newsweek-clone.PNG);">
+                </div>
+              </a>
+            </div>
+            <div class="col-12 col-md-6 newsweek-text order-md-1">
+              <h3 class="text-center">Newsweek Clone</h3>
+              <h4>Second project for Altcademy, made using HTML and CSS with Bootstraps 3.</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row text-white">
+        <div class="col-12 col-md-6 air-bg mb-5">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <a class="project-size" href="https://silly-figolla-24c2ee.netlify.app/">
+                <div class="img-fluid projectRatio project-img-l" style="background-image: url(./images/airbnb-news-clone.PNG);">
+                </div>
+              </a>
+            </div>
+            <div class="col-12 col-md-6 air-text">
+              <h3 class="text-center">Airbnb Clone</h3>
+              <h4>Cloning the Airbnb Newsroom site, made using Bootstraps 4 to make a navbar and scollable row. Custom CSS and HTML were used.</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 infusion-bg mb-5">
+          <div class="row">
+            <div class="col-12 col-md-6 order-md-2">
+              <a class="project-size" href="https://infusiontimer.github.io/">
+                <div class="img-fluid projectRatio project-img-r" style="background-image: url(./images/infusion-timer.PNG);">
+                </div>
+              </a>
+            </div>
+            <div class="col-12 col-md-6 infusion-text order-md-1">
+              <h3 class="text-center">Infusion Timer</h3>
+              <h4>Self made project to keep track of IV infusion volumes. Made using Javascript, HTML, and Tailwind.</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
