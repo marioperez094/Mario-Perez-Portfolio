@@ -1,5 +1,11 @@
+/* Setup */
+
 body {
   color: rgba(44, 44, 44, 0.8)
+}
+
+.container-fluid {
+  max-width: 1200px;
 }
 
 a {
@@ -10,6 +16,8 @@ a {
 a:hover {
   opacity: 0.8;
 }
+
+/* Navbar */
 
 nav {
   z-index: 1;
@@ -31,13 +39,22 @@ nav {
   }
 }
 
-.container-fluid {
-  max-width: 1200px;
-}
-
 .nav-title {
   font-size: 25px;
 }
+
+.nav-title,
+.nav-link,
+.nav-title:hover,
+.nav-link:hover {
+  color: white;
+}
+
+#navbarMenu .nav-link {
+  padding: 12px 5px;
+}
+
+/* Content */
 
 #arrow {
   transform: rotate(90deg);
@@ -45,12 +62,17 @@ nav {
   padding-bottom: 5px;
 }
 
-#navbarMenu .nav-link {
-  padding: 12px 5px;
+#up-arrow {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  z-index: 3;
 }
 
-.nav-title, .nav-link, .nav-title:hover, .nav-link:hover {
-  color: white;
+#up-arrow h1{
+  transform: rotate(-90deg);
+  padding-bottom: 5px;
+  color: black;
 }
 
 #hero-img {
@@ -110,10 +132,14 @@ nav {
 }
 
 .aspectRatio, .projectRatio {
-  margin: 10px 0;
   padding-top: 100%;
   background-size: cover;
   background-position: center;
+}
+
+.projectRatio {
+  margin-top: 5%;
+  height: 90%;
 }
 
 .aspectRatio {
@@ -175,9 +201,14 @@ nav {
   .newsweek-bg, .infusion-bg {
     border-top-left-radius: 0px;
     border-bottom-right-radius: 50px;
-    margin-right:
   }
 
+    .apple-text,
+    .newsweek-text,
+    .air-text,
+    .infusion-text {
+      min-height: 325px;
+    }
   .project-img-l {
     border-top-right-radius: 0px;
     border-bottom-left-radius: 50px;
@@ -188,6 +219,7 @@ nav {
       border-bottom-right-radius: 50px;
     }
 }
+
 
 .apple-text {
   background-color: rgba(255, 0, 0, 0.8);
@@ -207,4 +239,11 @@ nav {
 
 .project-bg h4 {
   font-weight: 200;
+}
+
+/* Footer */
+
+#legal {
+  margin: 0;
+  width: auto;
 }
