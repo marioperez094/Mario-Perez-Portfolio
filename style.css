@@ -1,3 +1,12 @@
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
 nav {
   z-index: 1;
 }
@@ -9,7 +18,7 @@ nav {
 
 @media (max-width: 767px) {
   #navbarMenu {
-    background-color: black;
+    background-color: rgba(44, 44, 44, 0.8);
     position: absolute;
     top: 0;
     left: 0;
@@ -41,7 +50,6 @@ nav {
 }
 
 #hero-img {
-  position: absolute;
   top: 0;
   width: 100%;
   background-image: url(./images/national-cancer-institute-KMvoHcB-w5g-unsplash\ \(1\).jpg);
@@ -51,7 +59,7 @@ nav {
 
 .hero-content {
   height: 400px;
-  text-shadow: black 0px 2px 1px;
+  text-shadow: black 0px 5px 1px;
 }
 
 @media (min-width: 992px) {
@@ -62,9 +70,137 @@ nav {
 
 .window {
   background-color: rgba(255, 255, 255, 0.3);
-  padding: 10px 10px;
+  padding: 25px 50px;
   border-top-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-  border-left: 2px solid rgba(255, 255, 255, 0.5);
+  border-top-right-radius: 10px;
+  border-left: 3px solid rgba(255, 255, 255, 1);
+  border-right: 3px solid rgba(255, 255, 255, 1);
+  width: 50vw;
+  max-width: 992px;
+  height: 150px;
+}
+
+@media (min-width: 992px) {
+  .window {
+    height: 200px;
+  }
+}
+
+.hero-divider {
+  width: 75vw;
+  max-width: 1200px;
+  border-bottom: 2px white solid;
+}
+
+.header {
+  background-color: rgb(44, 44, 44);
+}
+
+.img-border {
+  border: 3px rgb(173, 173, 173) solid;
+  border-radius: 1000px;
+}
+
+.project-size {
+  width: 25%;
+}
+
+.aspectRatio, .projectRatio {
+  margin: 10px 0;
+  padding-top: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.aspectRatio {
+  border: 2px solid rgb(193, 193, 193);
+}
+
+.skills {
+  background-color: rgb(173, 173, 173);
+  border-radius: 10px;
+}
+
+.skills h4 {
+  font-weight: 700;
+}
+
+.skills i {
+  font-size: 40px;
+  padding: 0 10px;
+}
+
+.project-bg {
+  background-color: rgb(44, 44, 44);;
+}
+
+.apple-bg { 
+  border:rgba(255, 0, 0, 0.8) 2px solid;
+}
+
+.newsweek-bg {
+  border: rgba(0, 255, 0, 0.8) 2px solid; 
+}
+
+.air-bg {
+  border: rgba(0, 0, 255, 0.8) 2px solid;
+}
+
+.infusion-bg {
+  border: rgba(0, 255, 255, 0.8) 2px solid;
+}
+
+.apple-bg, .newsweek-bg, .air-bg, .infusion-bg {
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+.project-img-l, .project-img-r {
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+@media (min-width: 768px) {
+  .apple-bg, .air-bg {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 50px;
+    margin-left: -5px;
+    margin-right: 5px;
+  }
+
+  .newsweek-bg, .infusion-bg {
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 50px;
+    margin-right:
+  }
+
+  .project-img-l {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 50px;
+  }
+
+  .project-img-r {
+      border-top-left-radius: 0px;
+      border-bottom-right-radius: 50px;
+    }
+}
+
+.apple-text {
+  background-color: rgba(255, 0, 0, 0.8);
+}
+
+.newsweek-text {
+  background-color: rgba(0, 255, 0, 0.8);
+}
+
+.air-text {
+  background-color: rgba(0, 0, 255, 0.8);
+}
+
+.infusion-text {
+  background-color: rgba(0, 255, 255, 0.8);
+}
+
+.project-bg h4 {
+  font-weight: 200;
 }
